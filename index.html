@@ -6,78 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Template</title>
     <script src="https://kit.fontawesome.com/2e57428e34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <nav>
+    <nav id="navigation">
         <div><img src="assets/business-logo.png" alt="business logo" class="logo" /></div>
         <ul id="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#">Menu <i class="fa-solid fa-chevron-down"></i></a> </li>
+            <li><a href="#">Services <i class="fa-solid fa-chevron-down" id="#"></i></a></li>
             <li><a href="#">Offers</a></li>
         </ul>
         <ul id="nav-link-icons">
-            <li><img src="" alt="search" /></li>
-            <li><img src="" alt="cart" /></li>
-            <li><img src="" alt="contact" /></li>
+            <li><i class="fa-solid fa-magnifying-glass" title="search" id="search-icon"></i></li>
+            <li><i class="fa-solid fa-bag-shopping" title="cart" id="cart-icon"></i></li>
+            <li><a href="#" id="contact"><i class="fa-solid fa-phone-volume" title="contact button"></i><span
+                        id="contact-text">Contact</span></a></li>
         </ul>
     </nav>
 
-    <main>
-        <div>
-            <h1>Dive into Delights of Delectable Food</h1>
-            <p>Where each plate weaves a story of Culinary Mastery and passionate craftsmanship</p>
-            <button>Order Now</button>
-            <button>Order Now</button>
-            <div><button>Watch Video</button><img src="" alt="play-icon" /></div>
-        </div>
-        <div>
+    <main id="main-content">
+        <section id="hero-section">
             <div>
-                <p>Hot spicy Food 🌶</p>
+                <h1>Dive into Delights of Delectable <span id="accent-text">Food</span></h1>
+                <p>Where each plate weaves a story of Culinary Mastery and passionate craftsmanship</p>
+                <button>Order Now</button>
+                <button>Order Now</button>
+                <div><button>Watch Video</button><img src="" alt="play-icon" /></div>
             </div>
+            <div>
+                <div>
+                    <p>Hot spicy Food 🌶</p>
+                </div>
 
-            <img src="assets/hero-section/hero-image-person.png" alt="play-icon" width="400" />
+                <img src="assets/hero-section/hero-image-person.png" alt="play-icon" id="hero-image" />
+                <div>
+                    <img src="" alt="" class="reviews-thumbnail" />
+                    <p class="reviews-title">Spicy noodles</p>
+                    <div class="reviews-stars"></div>
+                    <div class="reviews-price-container"><span class="reviews-dollar-sign">$</span><span
+                            class="reviews-price">18.00</span> </div>
+                </div>
+            </div>
             <div>
                 <img src="" alt="" class="reviews-thumbnail" />
-                <p class="reviews-title">Spicy noodles</p>
+                <p>Vegetarian salad</p>
                 <div class="reviews-stars"></div>
                 <div class="reviews-price-container"><span class="reviews-dollar-sign">$</span><span
-                        class="reviews-price">18.00</span> </div>
+                        class="reviews-price">23.00</span></div>
             </div>
-        </div>
-        <div>
-            <img src="" alt="" class="reviews-thumbnail" />
-            <p>Vegetarian salad</p>
-            <div class="reviews-stars"></div>
-            <div class="reviews-price-container"><span class="reviews-dollar-sign">$</span><span
-                    class="reviews-price">23.00</span></div>
-        </div>
-        </div>
+            </div>
+        </section>
 
         <section id="categories">
             <p class="eyebrow-text">Customer Favorites</p>
-            <h2>Popular Categories</h2>
+            <h2 class="section-title">Popular Categories</h2>
 
             <div id="categories-container">
-                <div class="card"><img src="assets/categories/categories-main-dish.png" alt="main dish icon"
-                        width="100" />
-                    <p>Main Dish</p>
-                    <p>(86 dishes)</p>
+                <div class="card">
+                    <div><img src="assets/categories/categories-main-dish.png" alt="main dish icon" width="100" />
+                        <p class="card-subtext">Main Dish</p>
+                        <p class="card-dishes">(86 dishes)</p>
+                    </div>
                 </div>
-                <div class="card"><img src="assets/categories/categories-breakfast.png" alt="main dish icon"
-                        width="100" />
-                    <p>Breakfast</p>
-                    <p>(86 dishes)</p>
+                <div class="card">
+                    <div><img src="assets/categories/categories-breakfast.png" alt="main dish icon" width="100" />
+                        <p class="card-subtext">Breakfast</p>
+                        <p class="card-dishes">(14 breakfast)</p>
+                    </div>
                 </div>
-                <div class="card"><img src="assets/categories/categories-dessert.png" alt="main dish icon"
-                        width="100" />
-                    <p>Main Dish</p>
-                    <p>(86 dishes)</p>
+                <div class="card">
+                    <div><img src="assets/categories/categories-dessert.png" alt="main dish icon" width="100" />
+                        <p class="card-subtext">Main Dish</p>
+                        <p class="card-dishes">(35 dessert)</p>
+                    </div>
                 </div>
-                <div class="card"><img src="assets/categories/categories-all.png" alt="main dish icon" width="100" />
-                    <p>Main Dish</p>
-                    <p>(86 dishes)</p>
+                <div class="card">
+                    <div><img src="assets/categories/categories-all.png" alt="main dish icon" width="100" />
+                        <p class="card-subtext">Main Dish</p>
+                        <p class="card-dishes">(135 all)</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -132,7 +141,7 @@
 
         <section id="testimonials">
             <div>
-                <img src="assets/testimonials/chef.png" alt="image of chef">
+                <img src="assets/testimonials/chef.png" alt="image of chef" id="chef-image">
                 <div>
                     <p>Our Best Chef!</p>
                 </div>
@@ -186,7 +195,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer-content">
         <div><img src="assets/business-logo.png" alt="business logo" class="logo" />
             <p>Savor the artistry where every dish is a culinary masterpiece</p>
         </div>
