@@ -78,6 +78,15 @@
   color: #39db4a;
 }
 
+.card-dishes {
+  color: #555;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.card-subtext {
+  margin-top: 0.25rem;
+}
 #hero-image {
   width: 100%;
   max-width: 200px;
@@ -88,7 +97,6 @@
   max-width: 1000px;
   margin: 6rem auto;
   text-align: center;
-  border: 1px solid red;
 }
 
 #categories-container {
@@ -98,20 +106,20 @@
   /* align-items: center; */
   justify-content: center;
   margin-top: 3rem;
+  border: 1px solid red;
   row-gap: 3rem;
 }
 
 .card {
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 1rem;
   /* border: 10px; */
-  width: 200px;
-  height: 200px;
+  width: 12rem;
+  height: 12rem;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .eyebrow-text {
@@ -124,7 +132,7 @@
 
 .section-title {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #footer-content {
@@ -136,14 +144,42 @@
 
 /* tablet (768-1023px) */
 @media screen and (min-width: 768px) {
-  #categories {
-    border: 1px solid red;
+  .section-title {
+    font-size: 1.75rem;
   }
+
   #categories-container {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    max-width: 33rem;
+    margin: 3rem auto 0 auto;
+  }
 
-    /* border: 1px solid red; */
+  .card-dishes {
+    font-size: 0.9rem;
   }
 }
 /* desktop+ (1024+)  */
+@media screen and (min-width: 1024px) {
+  .section-title {
+    font-size: 32px;
+  }
+  #categories-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 48px auto 0 auto;
+  }
+
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+  .card-dishes {
+    font-size: 15px;
+  }
+
+  .card-subtext,
+  .card-dishes {
+    margin-top: 4px;
+  }
+}
