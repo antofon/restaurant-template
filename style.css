@@ -96,8 +96,9 @@
 #categories {
   width: 100%;
   max-width: 1000px;
-  margin: 6rem auto;
+  margin: 6rem auto 0 auto;
   text-align: center;
+
 }
 
 #categories-container {
@@ -175,6 +176,18 @@
   row-gap: 3rem;
   /* border: 1px solid red; */
 }
+
+#testimonials
+ {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  max-width: 1000px;
+  margin: 6rem auto;
+  align-content: center;
+  row-gap: 3rem;
+  border: 1px solid red;
+  }
 
 #footer-content {
   max-width: 1000px;
@@ -279,6 +292,7 @@
   }
 
   #categories {
+margin-top: 200px;
     max-width: 1200px;
   }
 
@@ -307,6 +321,7 @@
     max-width: 1200px;
     column-gap: 50px;
     padding: 40px 0;
+    margin-top: 200px;
   }
   #services-container-left {
     text-align: left;
@@ -321,7 +336,7 @@
   #services-container-right {
     margin: 0;
   }
-  
+
   .services-wrapper {
     width: 210px;
     height: 160px;
