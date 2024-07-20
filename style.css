@@ -224,13 +224,11 @@
   margin: 10rem auto 0 auto;
   align-content: center;
   row-gap: 3rem;
-
-  border: 1px solid red;
 }
 
 #footer-content {
   max-width: 1000px;
-  margin: 6rem auto 0 auto;
+  margin: 10rem auto 0 auto;
   padding: 0 2rem;
   border: 2px solid red;
 }
@@ -273,8 +271,46 @@
 }
 
 #reviews-images {
-  display: block;
+  width: 9rem;
+  height: auto;
 }
+
+#footer-container {
+  display:flex;
+  justify-content: space-between;
+
+}
+
+.footer-links-section {
+  font-weight: bold;
+}
+
+.footer-links-list {
+  list-style-type: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap:1rem;
+}
+
+.footer-links-list a {
+  text-decoration: none;
+  color: #000;
+}
+
+#icons-copyright {
+  margin-top: 3rem;
+  
+}
+
+#social-icons {
+  position: absolute;
+}
+
+#copyright {
+  text-align: center;
+}
+
 /* TABLET (768-1023px) */
 @media screen and (min-width: 768px) {
   .card-dishes {
@@ -301,32 +337,29 @@
     width: 25rem;
   }
 
-
-
-  #services-container-right{
+  #services-container-right {
     grid-template-columns: 1fr 1fr;
     max-width: 33rem;
     gap: 3rem;
     margin: 1rem auto 0 auto;
-
   }
 }
 
 @media screen and (min-width: 900px) {
   #testimonials {
-    /* border: 1px solid red; */
-    flex-direction: row;
-    /* justify-content: center; */
-  }
-
-  #reviews-container {
     flex-direction: row;
     align-items: center;
-    padding-left: 2rem;
   }
 
   #testimonials-container-right {
-    text-align:left;
+    text-align: left;
+  }
+
+  #reviews-container {
+    padding-left: 0;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
   }
 }
 
@@ -356,7 +389,7 @@
   }
 
   #categories {
-    margin-top: 200px;
+    margin-top: 160px;
     max-width: 1200px;
   }
 
@@ -384,12 +417,11 @@
     row-gap: 0;
     max-width: 1200px;
     column-gap: 50px;
-    padding: 40px 0;
+    padding: 0;
     margin-top: 200px;
   }
   #services-container-left {
     text-align: left;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -421,5 +453,21 @@
   .services-image {
     width: 32px;
     height: auto;
+  }
+
+  #reviews-images {
+    width: 144px;
+  }
+
+  #testimonials {
+    margin: 160px auto 0 auto;
+    row-gap: 48px;
+  }
+
+  #footer-content {
+    max-width: 1000px;
+    margin: 160px auto 0 auto;
+    padding: 0 2rem;
+    border: 2px solid red;
   }
 }
