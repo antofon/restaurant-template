@@ -231,7 +231,7 @@
   margin: 10rem auto 0 auto;
   padding: 0 2rem;
   /* border: 2px solid red; */
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
 
 #services-description-text {
@@ -277,10 +277,9 @@
 }
 
 #footer-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .footer-links-section {
@@ -292,11 +291,20 @@
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  row-gap:1rem;
+  row-gap: 1rem;
 }
 
-.footer-links-container {
+/* .footer-links-container {
   margin-top:1rem;
+} */
+
+.footer-links-wrapper {
+  margin-top: 1rem;
+}
+
+#footer-links-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-links-list a {
@@ -305,16 +313,15 @@
 }
 
 #footer-text {
-  margin-top:1rem;
+  margin-top: 1rem;
 }
 #icons-copyright {
   margin-top: 2rem;
-  
 }
 
 #social-icons {
-  display:flex;
-  column-gap:1rem;
+  display: flex;
+  column-gap: 1rem;
   justify-content: center;
 }
 
@@ -329,7 +336,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
   text-decoration: none;
 }
 
@@ -339,12 +346,16 @@
 }
 
 #copyright {
-  margin-top:2rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
 /* TABLET (768-1023px) */
 @media screen and (min-width: 768px) {
+  #footer-links-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .card-dishes {
     font-size: 0.9rem;
   }
@@ -377,6 +388,9 @@
   }
 }
 
+/* #footer-container {
+  flex-direction: row;
+} */
 @media screen and (min-width: 900px) {
   #testimonials {
     flex-direction: row;
@@ -395,16 +409,35 @@
   }
 }
 
-/* DESKTOP+ (1024px+)  */
-@media screen and (min-width: 1024px) {
-
+@media screen and (min-width: 950px) {
   #footer-container {
     flex-direction: row;
+    column-gap: 4em;
   }
+  #footer-logo-text {
+    width: 40%;
+  }
+  #footer-links-container {
+    width: 60%;
+    column-gap: 2em;
+  }
+}
 
- 
+/* DESKTOP+ (1024px+)  */
+@media screen and (min-width: 1024px) {
+  #footer-logo-text {
+    width: 50%;
+  }
+  #footer-links-container {
+    width: 50%;
+    column-gap: 0;
+  }
   #services-desktop-cta {
     display: inline-block;
+  }
+
+  #footer-container {
+    column-gap: 64px;
   }
 
   .services-cta {
@@ -508,7 +541,7 @@
   }
 
   #icons-copyright {
-    margin-top:48px;
+    margin-top: 48px;
   }
 }
 
@@ -516,10 +549,10 @@
   /* #social-icons {
     position: absolute;
    } */
- 
-   .icon-link {
-     font-size: 16px;
-   width: 48px;
-   height: 48px;
-   }
+
+  .icon-link {
+    font-size: 16px;
+    width: 48px;
+    height: 48px;
+  }
 }
