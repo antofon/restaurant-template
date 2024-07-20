@@ -259,6 +259,7 @@
   text-align: center;
   transition: 0.3s all;
   width: 6rem;
+  font-size: 1rem;
   margin: auto;
 }
 
@@ -315,6 +316,7 @@
 #footer-text {
   margin-top: 1rem;
 }
+
 #icons-copyright {
   margin-top: 2rem;
 }
@@ -425,6 +427,25 @@
 
 /* DESKTOP+ (1024px+)  */
 @media screen and (min-width: 1024px) {
+  .footer-links-wrapper {
+    margin-top: 0;
+  }
+  .logo {
+    width: 75px;
+    height: auto;
+  }
+  #footer-text {
+    width: 300px;
+  }
+  #chef-image {
+    width: 400px;
+    height: auto;
+  }
+
+  #testimonials-container-left, #testimonials-container-right {
+    width: 50%;
+  }
+
   #footer-logo-text {
     width: 50%;
   }
@@ -434,7 +455,7 @@
   }
   #services-desktop-cta {
     display: inline-block;
-  }
+  } 
 
   #footer-container {
     column-gap: 64px;
@@ -445,12 +466,14 @@
     border-radius: 48px;
     padding: 12px 32px;
     width: 64px;
+    font-size: 16px;
   }
+
   #services-mobile-cta {
     display: none;
   }
   .section-title {
-    font-size: 36px;
+    font-size: 43px;
   }
 
   #categories-container {
@@ -497,7 +520,7 @@
     flex-direction: column;
     margin: 0;
     width: 50%;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   #services-container-right {
@@ -532,7 +555,7 @@
 
   #testimonials {
     margin: 160px auto 0 auto;
-    row-gap: 48px;
+    max-width: 1200px;
   }
 
   #footer-content {
